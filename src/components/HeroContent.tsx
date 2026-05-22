@@ -9,7 +9,7 @@ export const HeroContent: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const typingSpeed = 50; 
+    const typingSpeed = 100; 
     const deletingSpeed = 25;
     const pauseBeforeDelete = 4000; // Gives them plenty of time to read the full line
     const pauseBeforeType = 600;    
@@ -40,7 +40,7 @@ export const HeroContent: React.FC = () => {
     <div className="flex flex-col items-center justify-center flex-grow px-4 text-center bg-[#3300FF] text-[#FFFFFF]">
       <div className="max-w-5xl w-full">
         {/* Main Heading */}
-        <h1 className="font-serif-editorial text-[3rem] mt-8 md:text-[5rem] leading-[1.05] tracking-tight font-normal select-none break-words min-h-[9rem] md:min-h-[15rem]">
+        <h1 className="font-serif-editorial text-[3rem] md:text-[5rem] leading-[1.05] tracking-tight font-normal select-none break-words min-h-[9rem] md:min-h-[15rem]">
           {displayedText}
           {/* Custom Blinking Cursor */}
           <span className="inline-block w-[4px] h-[2.5rem] md:h-[4.5rem] ml-1 bg-[#FFFFFF] align-middle transform translate-y-[-4px] animate-[pulse_0.8s_infinite]" />
