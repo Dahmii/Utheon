@@ -14,7 +14,7 @@ export const HeroContent: React.FC = () => {
     const pauseBeforeDelete = 4000; // Gives them plenty of time to read the full line
     const pauseBeforeType = 600;    
 
-    let timer: NodeJS.Timeout;
+  let timer: ReturnType<typeof setTimeout>;
 
     if (!isDeleting && index < textToType.length) {
       timer = setTimeout(() => {
