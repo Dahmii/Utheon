@@ -13,9 +13,9 @@ export const Navbar: React.FC = () => {
     />
 
    
-    <span className="font-serif-editorial text-2xl font-black tracking-tight">
+    {/* <span className="font-serif-editorial text-2xl font-black tracking-tight">
       utheon
-    </span>
+    </span> */}
   </div>
 
       
