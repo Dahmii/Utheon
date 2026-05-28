@@ -1,4 +1,5 @@
 import React from "react";
+import {FaEnvelope} from "react-icons/fa";
 
 export const Navbar: React.FC = () => {
   return (
@@ -27,9 +28,13 @@ export const Navbar: React.FC = () => {
       </div> */}
 
       
-      <div className="font-serif-editorial text-xl font-bold cursor-pointer hover:opacity-70">
+      {/* <div className="font-serif-editorial text-xl font-bold cursor-pointer hover:opacity-70">
         email
+      </div> */}
+      <div className="flex items-center gap-2 cursor-pointer hover:opacity-70">
+        <FaEnvelope size={20} />
       </div>
+
     </nav>
   );
 };
